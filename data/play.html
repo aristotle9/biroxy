@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Biroxy</title>
+  <link rel="shortcut icon" type="image/png" href="icon.png">
+ </head>
+ <style type="text/css">
+ html, body, div
+ {
+    width: 100%;
+    height: 100%;
+ }
+ body
+ {
+    margin: 0px;
+    background-image:url("biroxy-bg.gif");
+ }
+ a{
+    display:block;
+    width:320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+ }
+ #panel{
+    text-align: center;
+    padding-top: 80px;
+    height: auto;
+ }
+ #panel span
+ {
+    background-color: #5382CA;
+    font-size: 12px;
+    font-family: "微软雅黑", "simsun", sans;
+    color: white;
+ }
+ </style>
+ <script type="text/javascript">
+    var player;
+    var okbt;
+    //添加网页内全屏句柄:think good for firefox only
+    //true:网页内全屏
+    //false:取消全屏
+    window["player_fullwin"] = function(value)
+    {
+        if(!player)
+        {
+            player = document.getElementById("player");
+        }
+        if(!okbt)
+        {
+            okbt = document.getElementById("okbt");
+        }
+        if(value)//全屏
+        {
+            okbt.style.display = "none";
+            player.setAttribute("width", "100%");
+            player.setAttribute("height", "100%");
+        }
+        else
+        {
+            okbt.style.display = "";
+            player.setAttribute("width", "950");
+            player.setAttribute("height", "482");
+        }
+    };
+ </script>
+ <body>
+    <div id="panel">
+        <a id="vbt" href="#" title="Pick video file"><img src="_video.gif" /></a>
+        <span id="vlabel">视频未选择</span><br/>
+        <a id="cbt" href="#" title="Pick dm file!"><img src="_cmt.gif" /></a>
+        <span id="clabel">弹幕未选择</span><br/>
+        <a id="okbt" href="#" style="display:none;"><img id="okimg" src="_play.gif" /></a>
+    </div>
+ </body>
+</html>
+

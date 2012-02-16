@@ -1,0 +1,17 @@
+<login>true</login>
+<name>undefined</name>
+<user>1024</user>
+<scores>65535</scores>
+<money>100000</money><pwd></pwd>
+<isadmin>false</isadmin>
+<permission>32000,1001</permission>
+<level>MIN</level>
+<shot>false</shot>
+<chatid>1</chatid>
+<aid>1</aid>
+<pid>1</pid>
+<acceptguest>false</acceptguest>
+<duration>6:00</duration>
+<acceptaccel>false</acceptaccel>
+<cache>false</cache>
+<server></server>
