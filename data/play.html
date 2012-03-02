@@ -66,6 +66,24 @@
             player.setAttribute("height", "482");
         }
     };
+    //宽屏,用于调整宽屏的比例
+    //宽屏时大小为950x578
+    window["player_widewin"] = function()
+    {
+        //console.log("widescreen");
+        if(!player)
+        {
+            player = document.getElementById("player");
+        }
+        if(!okbt)
+        {
+            okbt = document.getElementById("okbt");
+        }
+
+        okbt.style.display = "";
+        player.setAttribute("width", "950");
+        player.setAttribute("height", "578");
+    };
  </script>
  <body>
     <div id="panel">
