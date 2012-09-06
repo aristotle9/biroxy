@@ -4,7 +4,7 @@
     "author": "aristotle9", 
     "icon": "data/icon.png",
     "icon64": "data/icon64.png",
-    "version": "0.2", 
+    "version": "0.2.1", 
     "fullName": "Biroxy:Bili Local Player", 
     "id": "jid1-fR8rsxMY3LkKvQ", 
     "description": "B站本地播放器.flash播放器来自B站,inspired by 弹幕冢[CSGA_KPX],AcPlay[Kaedei].",
